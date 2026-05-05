@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith AI - Tu Coach de Bienestar y Productividad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #26A69A;
+            --secondary: #4FC3F7;
+            --dark: #1A1A1A;
+            --light: #F5F7FA;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; font-weight: 800; }
+        p.subtitle { font-size: 1.5rem; opacity: 0.9; margin-bottom: 30px; }
+
+        .play-store-btn {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        .play-store-btn:hover { transform: scale(1.05); }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .feature-card h3 { color: var(--primary); margin-top: 0; }
+
+        footer {
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        footer a {
+            color: var(--dark);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Zenith AI</h1>
+        <p class="subtitle">Peak Performance & Inner Peace</p>
+        <p>La aplicación número uno para dominar tu productividad y cuidar tu salud mental con el poder de la Inteligencia Artificial.</p>
+        <br>
+        <a href="https://play.google.com/store/apps/details?id=com.spidermx.sorpresa" class="play-store-btn">
+            Descargar en Play Store
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <section>
+        <h2 style="text-align:center; font-size: 2.5rem;">¿Por qué elegir Zenith?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Coach IA 24/7</h3>
+                <p>Basado en Gemini 1.5 Flash, obtén consejos de bienestar y productividad personalizados en cualquier momento.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Deep Work Mode</h3>
+                <p>Elimina distracciones con nuestro temporizador pomodoro minimalista y entra en estado de flujo.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Monitoreo de Energía</h3>
+                <p>Visualiza tus niveles de energía y recibe recomendaciones basadas en tu estado emocional.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Zenith AI. Todos los derechos reservados.</p>
+        <a href="privacy.html">Política de Privacidad</a>
+        <a href="terms.html">Términos y Condiciones</a>
+    </div>
+</footer>
+
+</body>
+</html>
