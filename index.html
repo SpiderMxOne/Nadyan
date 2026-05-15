@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -84,6 +84,45 @@
         }
         .feature-card h3 { color: var(--primary); margin-top: 0; font-size: 1.5rem; font-weight: 800; }
 
+        .pricing-section {
+            margin-top: 80px;
+            text-align: center;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .price-card {
+            background: white;
+            padding: 40px;
+            border-radius: 32px;
+            border: 1px solid #eee;
+            position: relative;
+        }
+        .price-card.featured {
+            border: 2px solid var(--primary);
+            box-shadow: 0 20px 40px rgba(0,128,128,0.1);
+        }
+        .price-card h4 { font-size: 1.8rem; margin: 0; color: var(--dark); }
+        .price-card .price { font-size: 2.5rem; font-weight: 800; margin: 20px 0; color: var(--primary); }
+        .price-card ul { list-style: none; padding: 0; text-align: left; margin: 30px 0; }
+        .price-card ul li { margin-bottom: 12px; display: flex; align-items: center; }
+        .price-card ul li::before { content: "✓"; color: var(--primary); font-weight: bold; margin-right: 10px; }
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
         footer {
             background: #fff;
             text-align: center;
@@ -108,9 +147,9 @@
     </div>
     <div class="container">
         <h1>ZENITH</h1>
-        <p class="subtitle">Personalized Well-being & Peak Productivity</p>
+        <p class="subtitle">Bienestar Personalizado y Productividad Pico</p>
         <p style="max-width: 600px; margin: 0 auto 40px;">Descubre la herramienta definitiva diseñada por <strong>Diego Torres Barragán</strong> para dominar tu día con calma inquebrantable.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.spidermx.sorpresa" class="play-store-btn">
+        <a href="https://play.google.com/store/apps/details?id=com.spidermx.zenithai" class="play-store-btn">
             Instalar Zenith AI
         </a>
     </div>
@@ -122,27 +161,60 @@
         <div class="features-grid">
             <div class="feature-card glass">
                 <h3>Coach IA 2.5</h3>
-                <p>Impulsado por Gemini 2.5 Flash, obtén consejos de bienestar hiper-personalizados que entienden tu contexto actual.</p>
+                <p>Impulsado por Gemini 2.5 Flash, obtén consejos de bienestar hiper-personalizados que entienden tu pulso, clima y contexto actual.</p>
             </div>
             <div class="feature-card">
                 <h3>Audio 3.0 Espacial</h3>
-                <p>Sumérgete en atmósferas musicales Zen con transiciones suaves y sonido 3D diseñado para una concentración profunda.</p>
+                <p>Sumérgete en atmósferas musicales Zen que siguen sonando incluso con la pantalla bloqueada, diseñadas para una concentración profunda.</p>
             </div>
             <div class="feature-card">
                 <h3>IA Bio-Sincronizada</h3>
-                <p>La primera app que observa tu respiración y ajusta el sonido en tiempo real para inducir estados de flujo.</p>
+                <p>La primera app que observa tu respiración vía cámara y ajusta el sonido en tiempo real para inducir estados de flujo.</p>
             </div>
             <div class="feature-card glass">
-                <h3>Sabiduría Contextual</h3>
-                <p>Zenith adapta su sabiduría diaria según tu clima local y la hora del día, acompañando cada momento.</p>
+                <h3>Bloqueo de Distracciones</h3>
+                <p>Mantén el rumbo bloqueando automáticamente apps no autorizadas. Zenith te trae de vuelta al frente si intentas distraerte.</p>
             </div>
             <div class="feature-card">
                 <h3>Diario de Gratitud</h3>
-                <p>Al final del día, nuestra IA genera automáticamente un diario poético basado en tus logros y sesiones logradas.</p>
+                <p>Al final de cada sesión, nuestra IA genera automáticamente un diario poético basado en tus logros y calma alcanzada.</p>
             </div>
-            <div class="feature-card glass" style="border: 2px solid var(--primary);">
-                <h3>Modo Enfoque Pro</h3>
-                <p>Bloqueo inteligente de notificaciones y apps distractoras integrado directamente con Android Do Not Disturb.</p>
+            <div class="feature-card glass">
+                <h3>Fondo y Continuidad</h3>
+                <p>Uso de Foreground Services para que nada rompa tu estado Zen. Música y temporizador siempre activos, pase lo que pase.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <h2 style="font-size: 2.8rem; font-weight: 800; letter-spacing: -1px;">Elige tu camino</h2>
+        <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="price-card">
+                <h4>Versión Gratis</h4>
+                <div class="price">$0</div>
+                <ul>
+                    <li>Sesiones de enfoque (15 min)</li>
+                    <li>Música Zen (Selección limitada)</li>
+                    <li>Bloqueador de apps (Full)</li>
+                    <li>Coach IA (5 mensajes/día)</li>
+                    <li>Diario de gratitud</li>
+                    <li>Anuncios sutiles</li>
+                </ul>
+            </div>
+            <!-- Premium Plan -->
+            <div class="price-card featured">
+                <div class="badge">RECOMENDADO</div>
+                <h4>Zenith Premium</h4>
+                <div class="price">$4.99<span>/mes</span></div>
+                <ul>
+                    <li>Sesiones personalizadas (15-90 min)</li>
+                    <li>Biblioteca musical completa</li>
+                    <li>Coach IA Ilimitado</li>
+                    <li>Breath Sync Ilimitado</li>
+                    <li>Sin publicidad</li>
+                    <li>Soporte Prioritario</li>
+                </ul>
             </div>
         </div>
     </section>

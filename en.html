@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -84,6 +84,45 @@
         }
         .feature-card h3 { color: var(--primary); margin-top: 0; font-size: 1.5rem; font-weight: 800; }
 
+        .pricing-section {
+            margin-top: 80px;
+            text-align: center;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .price-card {
+            background: white;
+            padding: 40px;
+            border-radius: 32px;
+            border: 1px solid #eee;
+            position: relative;
+        }
+        .price-card.featured {
+            border: 2px solid var(--primary);
+            box-shadow: 0 20px 40px rgba(0,128,128,0.1);
+        }
+        .price-card h4 { font-size: 1.8rem; margin: 0; color: var(--dark); }
+        .price-card .price { font-size: 2.5rem; font-weight: 800; margin: 20px 0; color: var(--primary); }
+        .price-card ul { list-style: none; padding: 0; text-align: left; margin: 30px 0; }
+        .price-card ul li { margin-bottom: 12px; display: flex; align-items: center; }
+        .price-card ul li::before { content: "✓"; color: var(--primary); font-weight: bold; margin-right: 10px; }
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
         footer {
             background: #fff;
             text-align: center;
@@ -110,7 +149,7 @@
         <h1>ZENITH</h1>
         <p class="subtitle">Personalized Well-being & Peak Productivity</p>
         <p style="max-width: 600px; margin: 0 auto 40px;">Discover the ultimate tool designed by <strong>Diego Torres Barragán</strong> to master your day with unbreakable calm.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.spidermx.sorpresa" class="play-store-btn">
+        <a href="https://play.google.com/store/apps/details?id=com.spidermx.zenithai" class="play-store-btn">
             Install Zenith AI
         </a>
     </div>
@@ -122,27 +161,60 @@
         <div class="features-grid">
             <div class="feature-card glass">
                 <h3>AI Coach 2.5</h3>
-                <p>Powered by Gemini 2.5 Flash, get hyper-personalized well-being advice that understands your current context.</p>
+                <p>Powered by Gemini 2.5 Flash, get hyper-personalized well-being advice that understands your pulse, weather, and current context.</p>
             </div>
             <div class="feature-card">
                 <h3>Audio 3.0 Spatial</h3>
-                <p>Immerse yourself in Zen musical atmospheres with smooth transitions and 3D sound designed for deep focus.</p>
+                <p>Immerse yourself in Zen musical atmospheres that keep playing even when locked, designed for deep focus states.</p>
             </div>
             <div class="feature-card">
                 <h3>Bio-Synced AI</h3>
-                <p>The first app that observes your breathing and adjusts sound in real-time to induce flow states.</p>
+                <p>The first app that observes your breathing via camera and adjusts sound in real-time to induce deep flow states.</p>
             </div>
             <div class="feature-card glass">
-                <h3>Contextual Wisdom</h3>
-                <p>Zenith adapts its daily wisdom based on your local weather and time of day, accompanying every moment.</p>
+                <h3>Distraction Blocking</h3>
+                <p>Stay on track by automatically blocking unauthorized apps. Zenith pulls you back to focus if you try to get distracted.</p>
             </div>
             <div class="feature-card">
                 <h3>Gratitude Journal</h3>
-                <p>At the end of the day, our AI automatically generates a poetic journal based on your achievements and focus sessions.</p>
+                <p>At the end of every session, our AI automatically generates a poetic journal entry based on your focus achievements.</p>
             </div>
-            <div class="feature-card glass" style="border: 2px solid var(--primary);">
-                <h3>Pro Focus Mode</h3>
-                <p>Intelligent notification and distracting app blocking integrated directly with Android Do Not Disturb.</p>
+            <div class="feature-card glass">
+                <h3>Background Continuity</h3>
+                <p>Using Foreground Services to ensure nothing breaks your Zen. Music and timer stay active no matter what.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <h2 style="font-size: 2.8rem; font-weight: 800; letter-spacing: -1px;">Choose Your Path</h2>
+        <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="price-card">
+                <h4>Free Version</h4>
+                <div class="price">$0</div>
+                <ul>
+                    <li>Focus sessions (15 min)</li>
+                    <li>Zen Music (Limited selection)</li>
+                    <li>App Blocking (Full)</li>
+                    <li>AI Coach (5 messages/day)</li>
+                    <li>Gratitude Journal</li>
+                    <li>Subtle Ads</li>
+                </ul>
+            </div>
+            <!-- Premium Plan -->
+            <div class="price-card featured">
+                <div class="badge">RECOMMENDED</div>
+                <h4>Zenith Premium</h4>
+                <div class="price">$4.99<span>/mo</span></div>
+                <ul>
+                    <li>Custom sessions (15-90 min)</li>
+                    <li>Full Music Library</li>
+                    <li>Unlimited AI Coach</li>
+                    <li>Unlimited Breath Sync</li>
+                    <li>Ad-Free experience</li>
+                    <li>Priority Support</li>
+                </ul>
             </div>
         </div>
     </section>
