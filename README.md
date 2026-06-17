@@ -1,2 +1,2 @@
-# Zenith-AI
-Web Zenith AI
+# Nadyan
+Web Nadyan
